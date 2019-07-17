@@ -54,7 +54,6 @@ ul {
   display: flex;
   flex-direction: column;
 }
-
 .fade-in {
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -62,15 +61,6 @@ ul {
     -o-animation: fadein 2s; /* Opera < 12.1 */
        animation: fadein 2s;
 }
-
-/* .summary {
-  padding-top: 60px;
-  white-space: pre;
-  font-size: 13px;
-  font-family: Menlo, Monaco, 'Courier New', monospace;
-} */
-
-
 .actions img {
   width: 40px;
   height: 40px;
