@@ -2,23 +2,10 @@
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-@-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
 @-webkit-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-@-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-@-o-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
 h1 {
   font-family: 'Shadows Into Light', cursive;
   margin: 0;
@@ -30,35 +17,43 @@ h1 {
   line-height: 1.6;
   font-size: 1em;
   margin: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .avatar {
   width: 100%;
 }
-/* .avatar-section {
-  min-height: 800px;
-} */
 .avatar-section, .details-section {
    width: 50%;
    max-width: 600px;
-   align-self: center;
+   -ms-flex-item-align: center;
+       align-self: center;
 }
 .details-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .fade-in {
   -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-   -ms-animation: fadein 2s;
-    -o-animation: fadein 2s;
-       animation: fadein 2s;
+          animation: fadein 2s;
 }
 .actions {
   list-style: none;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .actions img {
   width: 40px;
@@ -72,22 +67,31 @@ h1 {
   display: inline;
 }
 
+@media (min-width: 701px) {
+  html, body, .page-container {
+    height: 100%;
+  }
+}
 @media (max-width: 700px) {
   .page-container {
-    flex-flow: column-reverse;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 4em;
   }
   .avatar-section {
     width: 300px;
-    /* min-height: 400px; */
   }
   .details-section {
     width: 100%;
  }
   .actions {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding: 0;
   }
 }
-
