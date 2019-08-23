@@ -78,6 +78,7 @@ h1 {
 #webchat-btn {
   position: absolute;
   right: 10px;
+  bottom: 0;
   z-index: 10;
   padding: 15px 20px;
   color: #fff;
@@ -90,6 +91,7 @@ h1 {
   display: none;
   overflow: hidden;
   position: absolute;
+  bottom: 0;
   right: 10px;
   z-index: 10;
   border-top-left-radius: 15px;
@@ -130,6 +132,10 @@ h1 {
     min-height: 500px;
     justify-content: center;
   }
+
+  #webchat-btn::after {
+    content: 'Hiring? Talk to my bot';
+  }
 }
 @media (max-width: 700px) {
   .main-content {
@@ -146,5 +152,8 @@ h1 {
   .actions {
     align-self: flex-start;
     padding: 0;
+  }
+  #webchat-btn::after {
+    content: 'Hiring?';
   }
 }

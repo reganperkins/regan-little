@@ -21,29 +21,29 @@
   </script>
 </head>
 <body>
-    <div class="main-content">
-      <div class="avatar-section fixed-ratio">
-        <img class="avatar fixed-ratio-content" src="./img/reganlittle.jpg" />
+  <div class="main-content">
+    <div class="avatar-section fixed-ratio">
+      <img class="avatar fixed-ratio-content" src="./img/reganlittle.jpg" />
+    </div>
+    <div class="details-section fade-in">
+      <h1>Regan Leigh Little</h1>
+      <p>I am a passionate software developer located in beautiful Vancouver BC. My main tools are JavaScript and React/React Native, Redux, NodeJS but I love to learn and play with other languages, frameworks and tools.</p>
+      <p>I love the development community and try to give back by mentoring at Women Learning Code, Children Learning Code and the HTML 500 events. I have also been a TA for a local bootcamp - Lighthouse Labs. When I'm not coding I usually camping, hiking, using my telescope or attending some of the various tech meetups in Vancouver.</p>
+      <ul class="actions">
+        <li><a href="https://github.com/reganperkins" target="_blank"><img src="./img/github.png" /><span class="label">Github</span></a></li>
+        <li><a href="https://codepen.io/reganperkins/" target="_blank"><img src="./img/codepen.png" /><span class="label">CodePen</span></a></li>
+        <li><a href="./resources/resume.pdf" target="_blank"><img src="./img/resume.png" /><span class="label">Resume</span></a></li>
+        <li><a href="https://www.linkedin.com/in/reganperkins/" target="_blank"><img src="./img/linkedin.png" /><span class="label">LinkedIn</span></a></li>
+      </ul>
+    </div>
+    <div id="webchat-btn"></div>
+    <div id="webchat-wrapper">
+      <div class="webchat-toolbar">
+        <div id="webchat-exit">X</div>
       </div>
-      <div class="details-section fade-in">
-          <h1>Regan Leigh Little</h1>
-          <p>I am a passionate software developer located in beautiful Vancouver BC. My main tools are JavaScript and React/React Native, Redux, NodeJS but I love to learn and play with other languages, frameworks and tools.</p>
-          <p>I love the development community and try to give back by mentoring at Women Learning Code, Children Learning Code and the HTML 500 events. I have also been a TA for a local bootcamp - Lighthouse Labs. When I'm not coding I usually camping, hiking, using my telescope or attending some of the various tech meetups in Vancouver.</p>
-          <ul class="actions">
-            <li><a href="https://github.com/reganperkins" target="_blank"><img src="./img/github.png" /><span class="label">Github</span></a></li>
-            <li><a href="https://codepen.io/reganperkins/" target="_blank"><img src="./img/codepen.png" /><span class="label">CodePen</span></a></li>
-            <li><a href="./resources/resume.pdf" target="_blank"><img src="./img/resume.png" /><span class="label">Resume</span></a></li>
-            <li><a href="https://www.linkedin.com/in/reganperkins/" target="_blank"><img src="./img/linkedin.png" /><span class="label">LinkedIn</span></a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- <div id="webchat-btn">Hiring? Talk to my bot</div>
-      <div id="webchat-wrapper">
-        <div class="webchat-toolbar">
-          <div id="webchat-exit">X</div>
-        </div>
-        <div id="webchat"></div>
-      </div> -->
+      <div id="webchat"></div>
+    </div>
+  </div>
 </body>
 <script src="https://cdn.botframework.com/botframework-webchat/master/webchat-es5.js"></script>
 <script src="https://cdn.botframework.com/botframework-webchat/master/webchat.js"></script>
