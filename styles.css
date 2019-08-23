@@ -33,49 +33,35 @@ h1 {
   margin: 0;
   font-size: 2.3em;
 }
-.page-container {
+.main-content {
+  position: relative;
   font-family: 'Roboto', sans-serif;
-  color: #222;
   line-height: 1.6;
   font-size: 1em;
   margin: 0 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: #222;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .avatar {
-  width: 100%;
+  max-width: 100%;
 }
 .avatar-section, .details-section {
-   width: 50%;
-   max-width: 600px;
-   -ms-flex-item-align: center;
-       align-self: center;
+  width: 50%;
+  max-width: 600px;
+  align-self: center;
 }
 .details-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .fade-in {
-  -webkit-animation: fadein 4s;
-          animation: fadein 4s;
+  animation: fadein 4s;
 }
 .actions {
   list-style: none;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 .actions img {
   width: 40px;
@@ -129,21 +115,26 @@ h1 {
   height: 500px;
   overflow: scroll;
 }
-
+.avatar {
+  max-width: 100%;
+  height: 99%;
+  width: 100%;
+  object-fit: contain;
+}
 @media (min-width: 701px) {
-  html, body, .page-container {
+  html, body, .main-content {
     height: 100%;
+  }
+  .avatar-section, .details-section {
+    height: 100%;
+    min-height: 500px;
+    justify-content: center;
   }
 }
 @media (max-width: 700px) {
-  .page-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: column-reverse;
-            flex-flow: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .main-content {
+    flex-flow: column-reverse;
+    align-items: center;
     margin-top: 4em;
   }
   .avatar-section {
@@ -153,8 +144,7 @@ h1 {
     width: 100%;
  }
   .actions {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
     padding: 0;
   }
 }
