@@ -20,6 +20,9 @@ const startChat = async () => {
   window.WebChat.renderWebChat({
     directLine: window.WebChat.createDirectLine({ token }),
     botAvatarInitials: 'JB',
+    styleOptions: {
+      backgroundColor: '#f6f8fa',
+    },
   }, webChatContent);
 
   document.querySelector('#webchat > *').focus();
