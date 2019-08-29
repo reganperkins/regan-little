@@ -132,10 +132,10 @@ h1 {
 @media (min-width: 701px) {
   html, body, .main-content {
     height: 100%;
+    min-height: 570px;
   }
   .avatar-section, .details-section {
     height: 100%;
-    min-height: 500px;
     justify-content: center;
   }
 
