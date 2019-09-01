@@ -96,7 +96,7 @@ h1 {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border: 1px solid #eeeeee;
-  
+  background: #f6f8fa;
 	max-height: 0;
 	transition-property: all;
 	transition-duration: .5s;
