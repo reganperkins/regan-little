@@ -28,6 +28,7 @@ async function renderChat() {
     styleOptions: {
       backgroundColor: '#f6f8fa',
       botAvatarInitials: 'JB',
+      hideUploadButton: true,
     },
   }, webChatContent);
 }
@@ -36,7 +37,6 @@ function startChat() {
   clearOldMessages();
   webChatWrapper.classList.add('show');
   renderChat();
-  document.querySelector('#webchat > *').focus();
 }
 
 function closeChat() {
